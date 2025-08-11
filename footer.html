@@ -1,0 +1,146 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+footer {
+    background-color: #006ca5;
+    color: white;
+    padding: 30px 0;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-left h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer-left .tagline {
+    color: #ffbd59;
+    margin: 5px 0 20px;
+}
+
+.footer-menu h4,
+.footer-contact h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-menu ul,
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 5px;
+}
+
+.footer-menu a,
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-menu a:hover,
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    border-left: 1px solid rgba(255,255,255,0.4);
+    height: auto;
+    margin: 0 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffbd59;
+    color: #006ca5;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: white;      
+    color: #ffbd59;               
+    transform: scale(1.1) rotate(5deg);
+
+.bottom-bar {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 14px;
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+<footer>
+    <div class="container">
+        <!-- Left -->
+        <div class="footer-left">
+            <h1>SAVE-A-SPARK</h1>
+            <p class="tagline">Don’t just pay the bill, control every spark.</p>
+            <div class="bottom-bar">
+                <p>&copy; 2025 Save-A-Spark. All rights reserved.</p>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="footer-menu">
+            <h4>MENU</h4>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Why SAS?</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Dashboard</a></li>
+            </ul>
+        </div>
+
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Contact -->
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p><a href="saveaspark@gmail.com">saveaspark@gmail.com</a></p>
+            <p><a href="#">Terms of Conditions</a></p>
+            <p><a href="#">Privacy Policy</a></p>
+        </div>
+</div>
+
+</footer>
+</body>
+</html>
