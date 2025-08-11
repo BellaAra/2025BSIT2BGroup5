@@ -1,6 +1,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <style>
@@ -14,30 +15,34 @@ body {
 
 div {
 
+    height: 340px;
+    width: 300px;
     background-color: white;
-    border-radius: 5px;
-
-}
-
-.container {
-
-    max-width: 1040px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: px;
-    flex-wrap: wrap;
+    border-radius: 10px;
     float: right;
 
 }
 
-.signup {
-
-	color: #ffbd59;
-
+.container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    padding: 20px;
 }
 
+.login-button {
+        background: #005b99;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-weight: bold;
+	font-size: 16px;
+	margin-top: 10px;
+}
 
 .question {
 
@@ -45,15 +50,79 @@ div {
 
 }
 
+h2 {
+	
+	font-weight: bold;
+	float: right;
+	color: white;
+
+}
+
+h1 {
+
+    font-weight: bold;
+    color: #004b87;
+
+}
+
+p {
+
+	font-weight: bold;
+	font-size: 13px;
+	color: white;
+
+}
+
+a {
+
+	color: #ffbd59;
+
+}
+
+.textbox {
+
+	background-color: #e7e7e7;
+	border: none;
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 280px;
+
+}
+
+.tagline {
+
+	float: right;
+	margin: auto;
+	color: white;
+	text-align: center;
+
+}
+
 </style>
 
 <body>
 
+<h1 class="tagline"> DON'T JUST PAY THE BILL, CONTROL EVERY SPARK. </h1>
+
    <div class="container">
 	<div class="login-box"> 
-          <h3>LOG IN</h3>
-	<input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
+	 <h1>LOG IN</h1>
+	<input type="text" class="textbox"> <br><br>
+        <input type="password" class="textbox">
+
+<p class="question"> DON'T HAVE AN ACCOUNT? <a href=""> SIGN UP </a></p>
 
 
-<h4 class="question"> DON'T HAVE AN ACCOUNT? </h4> <h4 class="signup"> SIGN UP </h4>
+<button class="login-button"> LOG IN </b></button>
+
+ <!-- icons here -->
+
+	<i class="fa-brands fa-facebook"></i>
+	<i class="fa-brands fa-instagram"></i>
+	<i class="fa-brands fa-x-twitter"></i>
+	<i class="fa-brands fa-youtube"></i>
+
+
+</div>
+</body>
+</html>
