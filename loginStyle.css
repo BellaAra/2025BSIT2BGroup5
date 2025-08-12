@@ -1,0 +1,150 @@
+<style>
+
+body {
+
+    background-image: url('https://images.unsplash.com/photo-1455920013194-211c606abacb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: 1915px;
+    font-family: sans-serif;
+    
+}
+
+div {
+
+    height: 400px;
+    width: 340px;
+    background-color: white;
+    border-radius: 10px;
+    float: right;
+
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 200px;
+    right: 200px;
+}
+
+.tagline {
+
+	position: relative;
+	top: 170px;
+	left: 560px;
+	margin: auto;
+	color: white;
+	text-align: center;
+
+}
+
+.textbox {
+
+	background-color: #e7e7e7;
+	border: none;
+	padding: 10px;
+	margin-bottom: 10px;
+	width:340px;
+
+}
+
+.question {
+
+    color: #006ca5;
+
+}
+
+h2 {
+	
+	font-weight: bold;
+	float: right;
+	color: white;
+
+}
+
+h1 {
+
+    font-weight: bold;
+    color: #004b87;
+
+}
+
+p {
+
+	font-weight: bold;
+	font-size: 13px;
+	color: white;
+
+}
+
+a.login-button {
+
+    display: block;
+    text-decoration: none;
+    background: #005b99;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 95%;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+a.login-button:hover {
+    background: #004b87;       /* dark on hover */
+}
+
+
+a.signup {
+
+	color: #ffbd59;
+
+}
+
+a.icons {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #006ca5;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 15px;
+	
+
+}
+
+a.icons:hover {
+
+	background-color: #00335a;
+
+}
+
+a.login-button:hover {
+    background: #004b87;       /* dark on hover */
+}
+
+img {
+
+    display: block;   
+    margin: 35px auto;
+    width: 100%;
+    height: auto;
+    cursor: pointer; 
+
+}
+
+</style>
