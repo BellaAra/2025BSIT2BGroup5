@@ -13,9 +13,7 @@
 </head>
 <body>
 
-    <div class="navbar">
 <?php include 'nav.php';?>
-    </div>
 
     <!-- Right-aligned content -->
     <div class="right-wrapper">
@@ -45,10 +43,9 @@
         </div>
     </div>
 	
-<footer>
 <?php require 'footer.php';?>
-</footer>
 
 
 </body>
+
 </html>
