@@ -80,10 +80,10 @@ body {
 
 /* Tagline */
 .tag {
-    margin-bottom: 20px;
-    max-width: 400px;
+    margin-bottom: 10px;
+    max-width: 500px;
     text-align: center;
-    margin-right: 90px;
+    margin-right: 83px;
 }
 
 .tagline {
@@ -94,15 +94,16 @@ body {
 
 /* Login Container */
 .container {
-    max-width: 400px;
+    max-width: 350px;
     width: 100%;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-right: 60px;
+    margin-right: 140px;
     text-align: center;
 	justify-content: center;
+	margin-bottom: 30px;
 }
 
 .login-box {
@@ -114,6 +115,11 @@ h1 {
     font-weight: bold;
     color: #004b87;
     margin-bottom: 20px;
+}
+
+.login-heading {
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+	color: white;
 }
 
 .textbox {
@@ -168,18 +174,20 @@ h1 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #006ca5;
-    color: white;
-    width: 30px;
-    height: 30px;
+    background-color: #ddb11c;
+    color: #006ca5;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     font-size: 16px;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
-.icons:hover {
-    background-color: #00335a;
+.icons a:hover {
+    background-color: white;      
+    color: #ddb11c;               
+    transform: scale(1.1);
 }
 
 img {
