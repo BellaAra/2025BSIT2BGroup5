@@ -1,0 +1,254 @@
+/* LOGIN CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", variable;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.login-wrapper {
+    background-image: url('../../images/loginBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+    padding: 0;
+}
+
+.page-sections {
+    background-color: white;
+    padding-bottom: 80px;
+}
+
+.right-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: calc(100vh - 70px);
+    padding: 20px 60px 60px 60px;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+/* Tagline */
+.tag {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+h1.login-heading {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin: 0;
+    color: white !important;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    justify-content: center;
+}
+
+
+/* Login Container */
+.container {
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border: none;
+}
+
+.login-box h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 12px 0;
+    color: #004b87;
+}
+
+.textbox {
+    background-color: #e7e7e7;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#password-input {
+    font-size: 16px;
+    font-family: Montserrat;
+}
+
+.question {
+    font-size: 13px;
+    font-weight: bold;
+    color: #006ca5;
+}
+
+.signup {
+    color: #ffbd59;
+    text-decoration: none;
+}
+
+.login-button {
+    display: block;
+    text-decoration: none;
+    background: #005b99;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+    width: 95%;
+}
+
+.login-button:hover {
+    background: #004b87;
+}
+
+.social-icons {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #006ca5;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.icons:hover {
+    background-color: #00335a;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Section Divider */
+.section-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 60px auto;
+    width: 80%;
+}
+
+/* Apply to all anchor-linked sections */
+#whysas-section,
+#contact-section {
+scroll-margin-top: 30px;
+}
+
+
+
+
+
+/* MEDIA */
+/* MEDIA */
+/* MEDIA */
+@media screen and (max-width: 769px) and (min-width: 320px) and (hover:none) {
+    .right-wrapper {
+        align-items: center;
+        justify-content: center;
+        min-height: auto;
+        padding: 20px;
+        margin-top: 40px; 
+    }
+
+    .tag {
+        max-width: 100%;
+        text-align: center !important;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    h1.login-heading {
+        font-size: 1.3rem;
+        line-height: 1.4;
+        text-align: center;
+        color: white !important;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+        margin-bottom: 10px;
+    }
+
+    .container {
+        max-width: 300px;
+        width: 90%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .login-box h1 {
+        font-size: 22px;
+    }
+
+    .textbox {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .login-button {
+        font-size: 15px;
+    }
+
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+        width: 100%;
+    }
+
+    #vertical-line {
+        display: none;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
