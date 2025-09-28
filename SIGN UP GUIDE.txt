@@ -1,0 +1,27 @@
+SIGN UP GUIDE 
+
+make sure to include gid the signupcheck.php kay amo na sa ang gapa connect sng php from signup to edit user. the reason why nag separate file gid ko for the POST&GET method is cuz once u click create account, ma diretso ka pa sa dashboard to access the edit user. so in a way
+
+signup.php--->signupcheck.php--->dashboard.php--->edituser.php
+
+MUST-ADD in edituser.php:
+
+(add this before <div class = "page-wrapper"> and after the php require)
+
+<!---POST&GET SIGN UP INFO-->
+<?php
+session_start();
+
+if(!isset($_SESSION['name'])&& !isset($_SESSION['email'])){
+	header("Location: signup.php"); //redirect to signup.php
+	exit;
+}
+
+$name = $_SESSION['name'];
+$email = $_SESSION['email'];
+$password = $_SESSION['password']; //why did i add this, demo reasons lang
+?>
+
+
+
+*inde na karon ma gana ang signupcheck.php if wala ni sa code sng edituser.php!!!! meyawwww thats it girlies

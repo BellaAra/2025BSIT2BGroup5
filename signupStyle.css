@@ -1,0 +1,242 @@
+body{
+margin: 0;
+padding: 0;
+font-family: 'Montserrat', sans-serif;
+}
+
+.background{
+    position: relative;
+	background-image: url('../../images/signup.png');
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	flex-shrink: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	
+	z-index: 9;
+	height: 100%;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 42, 60, 0.4); 
+  z-index: 10;
+}
+
+.signup-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: auto;
+	width: 400px;
+	background-color: white;
+	box-shadow: 0px 4px 8px rgba(17, 28, 35, 0.4);
+	z-index: 100;
+	position: absolute;
+	padding: 20px 20px 20px 20px;
+	border-radius: 10px;
+}
+
+.signup-container img{
+	width: 100px;
+}
+
+.signup-container h1{
+	font-size: 30px;
+	font-weight: bold;
+	color: #004b87;
+	margin: 15px 0 15px 0; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	width: 100%;
+}
+
+.input-fields {
+	width: 90%;
+	flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {  
+    width: 100%;
+    background-color: #e7e7e7;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.input-fields label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.input-fields input:focus {
+    outline: 0;
+}
+
+.input-fields.success input {
+    border: 1px solid rgb(4, 181, 77);
+}
+
+.input-fields.error input {
+    border: 1px solid rgb(219, 47, 47);
+}
+
+.input-fields .error {
+    color: rgb(219, 47, 47);
+    font-size: 12px;
+    height: 13px;
+    margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+label{
+	display: inline-block; /*research more on this*/
+	margin: 0 0 5px 0;
+	font-size: 12px;
+}
+
+input::placeholder{
+	font-family: 'Montserrat', variable;
+	font-size: 12px;
+}
+
+.submit-container{
+	width: 100%;
+}
+
+input[type="submit"]{
+	width: 90%;
+	padding: 15px 15px 15px 15px;
+	margin: 30px 0 30px 0;
+	border: none;
+	border-radius: 5px;
+	background-color:#005b99;
+	font-family: 'Montserrat', variable;
+	font-weight: 600;
+	font-size: 1rem; /*1rem = 16px*/
+	color: white;
+	cursor: pointer;
+}
+
+.divider{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin: 0px 0; /* add spacing above and below */
+    width: 90%;   /* make divider span full form width */
+}
+
+.divider span{
+	color: #a3a3a3;
+	font-size: 14px;
+	padding: 0 10px; /* spacing between lines and text */
+    background: #fff; /* match form background so line doesn’t overlap text */
+}
+
+.divider::before, .divider::after{
+	/*content: 'eee';*/	 /*debugging purposes*/
+	content: '';
+	flex: 1;
+	border-bottom: 1px solid #a3a3a3;
+	/*border-top: 1px solid #333;*/ 	/*demonstration of border AUUGH*/
+}
+
+.divider::before{
+	margin-right: 10px;
+}
+
+.divider::after{
+	margin-left: 10px;
+}
+
+.google-signup{
+	margin: 30px 0 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	background-color: white;
+	border: 1.5px solid #cecece;
+	padding: 15px;
+	border-radius: 5px;
+	/*box-shadow: 0px 0px 15px rgba(164, 164, 164, 0.2);*/ /*optional lang wahaha*/
+	cursor: pointer;
+	width: 80%;
+}
+
+.google-signup img{
+	width: 50px;
+}
+
+.google-signup p{
+	width: auto;
+	margin: 0;
+	font-size: 14px;
+	color: #004b87;
+	font-weight: 550;
+}
+
+.question{
+	text-align: center;
+	margin: 20px 0 0 0; 	
+	font-size: 13px;
+	color:  #716f6f;
+}
+
+.question a{
+	color: #dfa002;
+	text-decoration: none;
+}
+
+/*MEDIA QUERY SECTION*/
+/*MEDIA QUERY SECTION*/
+/*MEDIA QUERY SECTION hi ms dairin :3*/
+
+@media (max-width: 768px) {
+  .signup-container {
+    width: 90%;           
+    max-width: 300px;      
+    padding: 15px;         
+    margin: 40px auto;   
+  }
+
+  .signup-container h1 {
+    font-size: 1.4rem;     
+    text-align: center;   
+  }
+
+  input[type="text"],
+  input[type="submit"] {
+    font-size: 0.9rem;   
+    padding: 10px;         
+  }
+
+  .google-signup {
+    padding: 10px;      
+  }
+
+  .google-signup img {
+    width: 35px;        
+  }
+
+  .divider {
+    margin: 15px 0;       
+  }
+}
