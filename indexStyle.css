@@ -80,13 +80,22 @@ h1.login-heading {
     gap: 12px;
     border: none;
 }
+.input-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+}
 
-.error {
-    color: rgb(219, 47, 47);
-    font-size: 12px;
-    height: 13px;
-    margin-top: 5px;
-	margin-bottom: 10px;
+.input-field .error {
+color: rgb(219, 47, 47);
+  font-size: 12px;
+  gap: 10px;
+}
+
+.error.active {
+  visibility: visible;
 }
 
 .login-box h1 {
@@ -94,15 +103,21 @@ h1.login-heading {
     font-weight: bold;
     margin: 0 0 12px 0;
     color: #004b87;
+    text-align: center;
 }
 
 .textbox {
     background-color: #e7e7e7;
-    border: none;
-    padding: 10px;
+    border: 2px solid transparent;
+    padding: 12px;
     width: 100%;
     box-sizing: border-box;
     border-radius: 5px;
+}
+
+#username {
+    font-size: 16px;
+    font-family: Montserrat;
 }
 
 #password {
@@ -122,7 +137,8 @@ h1.login-heading {
 }
 
 .login-button {
-    display: block;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     background: #005b99;
     color: white;
@@ -191,7 +207,6 @@ scroll-margin-top: 30px;
 /* Highlight error */
 .textbox.error {
     border: 2px solid rgb(219, 47, 47);
-    background-color: #ffeaea;
 }
 
 /* Highlight success */
