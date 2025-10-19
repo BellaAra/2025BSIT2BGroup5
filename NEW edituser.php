@@ -96,4 +96,5 @@ $email = $_SESSION['email'] ?? null;
 <?php require 'views/footer.php' ?>
 
 </body>
+
 </html>
