@@ -21,6 +21,22 @@ type=login&userAct=create">
 
 <?php require 'views/navbar.php' ?>
 
+<?php
+session_start();
+
+
+
+// Accept both signup and login 
+if (!isset($_SESSION['username']) && !isset($_SESSION['email'])) {
+    header("Location: login.php"); // redirect if not logged in
+    exit;
+}
+
+// Get session data
+$username = $_SESSION['username']; 
+$email = $_SESSION['email'] ?? null;
+?>
+
 <div class="page-wrapper">
 
 	<div class="maincontainer">
@@ -35,11 +51,13 @@ type=login&userAct=create">
 				<input name = "address" type="text" placeholder="Lot 6, Blk. 7 Phase 3, Charito Heights">
 		</div>
 
+<!-- NEW UPDATE VVV--->
+
 <!-- BDAY INPUT FIELD -->
 <div class="bday-contact">
     <div class="input">
         <p> Birthday </p>
-        <input name = "bday" type="text" placeholder="2/10/2006">
+        <input name = "bday" type="date" value="<?php echo htmlspecialchars($_SESSION['bday'] ?? ''); ?>" >
     </div>
 
 <!-- CONTACT NUMBER INPUT FIELD -->
@@ -65,10 +83,10 @@ type=login&userAct=create">
 <!-- BLUE DIV CONTAINING THE USER PROFILE IMAGE -->
 <div class="imagesection">
 <img src="images/kao.jpg">
-	<h1> Kaori Hirose </h1>
+	<h1><?php echo htmlspecialchars($username); ?> </h1>
 	<p class="admin"> ADMIN </p>
 	
-	<p class="profile-email"> kaorihirose@gmail.com </p>
+	<p class="profile-email"> <?php echo htmlspecialchars($email); ?></p>
 	
 <button class="logout-btn" onclick="redirelogin.html"> Logout </button>
 		</div>

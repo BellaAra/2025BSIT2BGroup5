@@ -3,6 +3,7 @@ body{
 	font-family: 'Montserrat', variable;
 	margin: 0;
 	padding: 0;
+    height: 100%;
 }
 
 .right-wrapper {
@@ -12,6 +13,10 @@ body{
     justify-content: center;
     min-height: calc(100vh - 70px);
     padding: 40px;
+}
+
+.page-wrapper{
+    flex: 1;
 }
 
 h1{
@@ -125,6 +130,22 @@ input[type="text"], textarea{
     border: none;
 }
 
+/* VVV UPDATEEEEEEEE VVV */
+
+input[type="date"] {
+    width: 80%;
+    background-color: #E7E7E7;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: #333;
+    border: none;
+    margin-left: 50px;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    color: rgba(0, 0, 0, 0.4);
+}
+
 
 .messagebox{
 	height: 170px;
@@ -166,7 +187,7 @@ input[type="text"], textarea{
 .profile-email {
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.9rem;
-	position: relative;
+	position: relative;  
     margin-top: -20px;
     margin-bottom: 50px;
 }
