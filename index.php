@@ -29,23 +29,26 @@
             <form id="form" method= "POST" action="loginCheck.php">
 
                 <h1> LOG IN </h1>
-              
+                <div class = "input-field">
                 <input id="username" name="username" type="text" class="textbox" placeholder="Username">
                 <div class="error"></div>
+                </div>
 
+                <div class = "input-field">
                 <input id="password" name="password" type="password" class="textbox" placeholder="Password">
                 <div class="error"></div>
+                </div>
 
-                <p class="question">DON'T HAVE AN ACCOUNT? <a href="#" class="signup">SIGN UP</a></p>
+                <p class="question">DON'T HAVE AN ACCOUNT? <a href="signup.php" class="signup">SIGN UP</a></p>
 
                 <button type="submit" class="login-button">LOG IN</button>
 
                 <!-- SOCIAL ICONS INSIDE THE LOG-IN BOX -->
                 <div class="social-icons">
-                    <a href="#" class="icons"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icons"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="icons"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#" class="icons"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.facebook.com/login/&ved=2ahUKEwjJ1fbL1LCQAxU_h1YBHbscAW8QFnoECBAQAQ&usg=AOvVaw2NEj8NwnxhOue64pSijk7e" class="icons"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.instagram.com/accounts/login/%3Fhl%3Den&ved=2ahUKEwiz37_i1LCQAxW8s1YBHYLjJfcQFnoECAsQAQ&usg=AOvVaw22wbeKu9CbUP9Ki54NoHiP" class="icons"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://x.com/i/flow/login%3Flang%3Den&ved=2ahUKEwj2psXq1LCQAxXx4DQHHeMlH40QFnoECA4QAQ&usg=AOvVaw0dA8t6QR85iaz53sRXoo10" class="icons"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/account&ved=2ahUKEwiXvu_x1LCQAxWSqFYBHejUB5YQFnoECA0QAQ&usg=AOvVaw13YCwHL9P8MILbm4eiqfiG" class="icons"><i class="fa-brands fa-youtube"></i></a>
                 </div>
 
                 <img src="images/loginAd.png" alt="New Yorker banner ad">
